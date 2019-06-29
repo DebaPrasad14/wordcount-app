@@ -2,3 +2,10 @@
 
 <h2>You Entered: </h2>
 {{ ourtext }}
+
+<h2>Count of each words:</h2>
+
+{% for word, counteach in sortedWords %}
+  {{ word }} - {{ counteach }}
+  <br>
+{% endfor %}
